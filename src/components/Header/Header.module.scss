@@ -8,7 +8,7 @@
             @apply flex justify-between gap-12 ml-24 font-normal text-gray-400 pb-3;
 
             .link {
-                @apply pb-2 hover:border-b-2 hover:border-black transition-all;
+                @apply pb-2 border-b-2 border-transparent hover:border-b-2 hover:border-black transition-all;
             }
         }
     }
