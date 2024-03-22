@@ -1,0 +1,42 @@
+.banner {
+    @apply w-full p-12 pb-0 bg-[#C1DCDC] rounded-2xl flex justify-between min-h-96;
+
+    .content {
+        @apply max-w-lg;
+
+        .header {
+            @apply text-7xl font-extrabold;
+        }
+
+        .statistics {
+            @apply mt-6 flex justify-start gap-12 items-center;
+
+            &_item {
+
+                &_title {
+                    @apply text-4xl font-medium leading-[4rem];
+                };
+                &_text {
+                    @apply text-lg font-medium;
+                }
+            }
+
+            .vertical_line {
+                @apply w-px h-16 bg-black;
+            };
+        }
+
+        .link {
+            @apply relative mt-20 py-5 px-10 block text-3xl w-fit font-bold tracking-wider rounded-lg shadow-md hover:shadow-2xl bg-[#CEEAEA] transition-all z-50;
+        }
+    }
+
+    &_image {
+        .image_flower {
+            z-index: 20;
+            position: relative;
+        }
+        @apply relative after:content-[''] after:absolute after:bottom-0 after:-left-10 after:w-[28rem] after:h-[25rem] after:bg-black after:rounded-t-full after:rounded-l-full after:z-10;
+    }
+
+}
