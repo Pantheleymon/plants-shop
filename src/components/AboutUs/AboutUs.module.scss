@@ -1,0 +1,26 @@
+.about_us {
+    @apply mt-28 text-center pb-16;
+
+    .h2 {
+        @apply text-3xl font-bold;
+    }
+    .p {
+        @apply mt-3 text-lg font-medium text-[#8E8E8E];
+    }
+
+    .about_us__flex {
+        @apply flex gap-6 justify-center mt-12;
+
+        &_item {
+            @apply max-w-md;
+
+            &_image {
+                @apply rounded-full w-24 h-24 bg-[#C1DCDC] flex justify-center items-center mx-auto mb-6;
+            }
+
+            .h4 {
+                @apply text-lg font-bold;
+            }
+        }
+    }
+}
