@@ -1,10 +1,11 @@
 import styles from './Header.module.scss';
+import { FC } from 'react';
 
 import { Link, useLocation } from "react-router-dom";
 
-import { BsCart } from "react-icons/bs";
+import { BsCart } from "react-icons/bs"
 
-const Header = () => {
+const Header:FC = () => {
     const {pathname} = useLocation();
 
     return (

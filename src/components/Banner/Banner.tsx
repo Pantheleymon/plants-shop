@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import styles from './Banner.module.scss';
 import { Link } from 'react-router-dom';
 
-const Banner = () => {
+const Banner:FC = () => {
     return (
         <section className={styles.banner}>
             <article className={styles.content}>
