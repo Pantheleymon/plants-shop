@@ -4,6 +4,7 @@ import { FC } from "react";
 import Header from "../Header/Header";
 
 import Main from "../../pages/Main";
+import Products from "../../pages/Products";
 
 const App:FC = () => {
   return (
@@ -11,6 +12,7 @@ const App:FC = () => {
         <Header/>
         <Routes>
             <Route path="/" element={<Main/>}/>
+            <Route path="/products" element={<Products/>}/>
         </Routes>
     </main>
   );
